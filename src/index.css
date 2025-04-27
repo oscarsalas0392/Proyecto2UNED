@@ -1,13 +1,231 @@
 body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  color: #333;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+h1, h2, h3 {
+  font-family: 'Montserrat', sans-serif;
+  color: #2c3e50;
 }
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 15px;
+}
+
+/* Estilo para el Header */
+header {
+  background-color: #27ae60;
+  padding: 20px 0;
+  color: white;
+}
+
+header h1 {
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+}
+
+nav ul li {
+  margin: 0 20px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.1rem;
+}
+
+nav ul li a:hover {
+  color: #f39c12;
+}
+
+/* Estilo para las tarjetas de producto */
+.card {
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  background-color: white;
+  margin-bottom: 30px;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  height: 15rem;
+}
+
+.card-body {
+  padding: 15px;
+}
+
+.card-title {
+  font-size: 1.25rem;
+  color: #27ae60;
+  font-weight: bold;
+}
+
+.card-text {
+  font-size: 1rem;
+  color: #7f8c8d;
+  height: 4rem;
+}
+
+/* Estilo para las secciones de texto */
+.section-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #2c3e50;
+}
+
+p {
+  line-height: 1.6;
+  font-size: 1rem;
+  color: #7f8c8d;
+  text-align: center;
+}
+
+.lead {
+  font-size: 1.2rem;
+  color: #2c3e50;
+  text-align: center;
+}
+
+/* Botones */
+.btn {
+  padding: 12px 20px;
+  background-color: #27ae60;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-weight: bold;
+  cursor: pointer;
+  text-align: center;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background-color: #2ecc71;
+}
+
+.btn-success {
+  background-color: #27ae60;
+}
+
+.btn-success:hover {
+  background-color: #2ecc71;
+}
+
+/* Imágenes de los productos */
+.product-img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Footer */
+footer {
+
+  color: white !important;
+  padding: 20px 0;
+  text-align: center;
+}
+
+footer p {
+  color: white !important;
+  font-size: 0.9rem;
+}
+
+.imgbeneficios{
+  height: 15rem !important;
+}
+
+.values-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 30px 0;
+  font-size: 1.2rem;
+}
+
+.values-list li {
+  margin-bottom: 15px;
+  color: #2c3e50;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-label {
+  font-size: 1rem;
+  color: #34495e;
+  font-weight: bold;
+}
+
+.form-control {
+  padding: 12px;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  transition: border-color 0.3s ease-in-out;
+}
+
+.form-control:focus {
+  border-color: #27ae60;
+  box-shadow: 0 0 5px rgba(39, 174, 96, 0.5);
+}
+
+textarea {
+  resize: vertical;
+}
+
+form button {
+  padding: 12px 24px;
+  background-color: #27ae60 !important;
+  color: white;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+
+/* Estilos Responsivos */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+  }
+
+  .card {
+    margin-bottom: 15px;
+  }
+
+  .container {
+    padding: 15px;
+  }
+
+  .section-title {
+    font-size: 1.75rem;
+  }
+}
+
